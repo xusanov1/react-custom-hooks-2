@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+.news-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 10px 4px 8px rgba(252, 250, 250, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #000000bf;
+  padding: 20px;
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.news-image {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  max-width: 500px !important;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.card-info {
+  padding: 40px 20px;
+}
+
+.card-info h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #fff;
+  font-family: "Playfair Display", serif;
+}
+
+.card-info p {
+  margin-bottom: 20px;
+  color: #ffffffc1;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.card-info .read-more {
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card-info .read-more:hover {
+  background-color: #000;
+  color: #fff;
+
+  transition: background-color 0.3s, color 0.3s;
+}
